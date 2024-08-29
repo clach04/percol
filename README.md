@@ -80,6 +80,12 @@ percol currently supports only Python 2.x.
 
     $ sudo pip install percol
 
+NOTE will not install C/Migemo (Japanese) support.
+
+Or
+
+    $ sudo pip install "percol[cmigemo]"
+
 ### Manual
 
 First, clone percol repository and go into the directory.
