@@ -74,7 +74,7 @@ it can be used in command-chains with `|` in your shell (**UNIX philosophy!**).
 
 ## Installation
 
-percol currently supports only Python 2.x.
+percol supports Python 2.7 and 3.6+ thanks for [six](https://pypi.org/project/six/).
 
 ### PyPI
 
