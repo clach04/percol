@@ -74,7 +74,7 @@ it can be used in command-chains with `|` in your shell (**UNIX philosophy!**).
 
 ## Installation
 
-percol currently supports only Python 2.x.
+percol supports Python 2.7 and 3.6+ thanks for [six](https://pypi.org/project/six/).
 
 ### PyPI
 
@@ -204,15 +204,16 @@ function pattach() {
 Even though Percol is mainly designed as a UNIX command line tool, you can call it from your Python code like so:
 
 ```python
-from cStringIO import StringIO
+#!/usr/bin/env python
+
 from percol import Percol
 from percol.actions import no_output
 
+
 def main(candidates):
-    si, so, se = StringIO(), StringIO(), StringIO()
     with Percol(
             actions=[no_output],
-            descriptors={'stdin': si, 'stdout': so, 'stderr': se},
+            descriptors={'stdin': None, 'stdout': None, 'stderr': None},
             candidates=iter(candidates)) as p:
         p.loop()
     results = p.model_candidate.get_selected_results_with_index()
