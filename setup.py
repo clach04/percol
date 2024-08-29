@@ -2,6 +2,12 @@
 
 from setuptools import setup
 
+is_win = sys.platform.startswith('win')
+
+install_requires = ["six >= 1.7.3", "cmigemo >= 0.1.5"]
+if is_win:
+      install_requires += ['windows-curses']
+
 exec(open("percol/info.py").read())
 
 setup(name             = "percol",
@@ -22,5 +28,5 @@ setup(name             = "percol",
                           "Topic :: Utilities"],
       keywords         = "anything.el unite.vim dmenu shell pipe filter curses",
       license          = "MIT",
-      install_requires = ["six >= 1.7.3", "cmigemo >= 0.1.5"]
+      install_requires = install_requires
       )
