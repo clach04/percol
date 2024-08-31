@@ -10,7 +10,7 @@ The interface of percol is highly inspired by anything.el for Emacs.
 
 Full details at https://github.com/clach04/percolator"""
 
-__version__ = "0.2.3"
+__version__ = "0.2.4"
 
 __logo__ = """                                    __
         ____  ___  ______________  / /
