@@ -6,17 +6,46 @@ from setuptools import setup
 
 is_win = sys.platform.startswith('win')
 
+if len(sys.argv) <= 1:
+    print("""
+Suggested setup.py parameters:
+
+    * build
+    * install
+    * sdist  --formats=zip
+    * sdist  # NOTE requires tar/gzip commands
+
+    python -m pip install -e .
+
+PyPi:
+
+    python -m pip install setuptools twine
+
+    python setup.py sdist
+    # python setup.py sdist --formats=zip
+    python -m twine upload dist/* --verbose
+
+    ./setup.py  sdist ; twine upload dist/* --verbose
+
+""")
+
 install_requires = ["six >= 1.7.3", ]
 if is_win:
       install_requires += ['windows-curses']
 
 exec(open("percol/info.py").read())
 
-setup(name             = "percol",
+person_name = 'clach04'
+person_email = None
+
+setup(name             = "percolator",
       version          = __version__,
       author           = "mooz",
       author_email     = "stillpedant@gmail.com",
-      url              = "https://github.com/mooz/percol",
+      maintainer = person_name,
+      maintainer_email = person_email,
+
+      url              = "https://github.com/clach04/percolator/tree/mymain",
       description      = "Adds flavor of interactive filtering to the traditional pipe concept of shell",
       long_description = __doc__,
       packages         = ["percol"],
@@ -24,6 +53,7 @@ setup(name             = "percol",
       classifiers      = ["Environment :: Console :: Curses",
                           "License :: OSI Approved :: MIT License",
                           "Operating System :: POSIX",
+                          'Operating System :: OS Independent',
                           "Programming Language :: Python",
                           'Programming Language :: Python :: 2',
                           'Programming Language :: Python :: 2.7',
