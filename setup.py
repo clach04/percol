@@ -1,5 +1,7 @@
 #!/usr/bin/env python
 
+import sys
+
 from setuptools import setup
 
 is_win = sys.platform.startswith('win')
