@@ -5,6 +5,7 @@ import sys
 from setuptools import setup
 
 is_win = sys.platform.startswith('win')
+is_cpython = platform.python_implementation() == 'CPython'
 
 if len(sys.argv) <= 1:
     print("""
@@ -31,7 +32,7 @@ PyPi:
 """)
 
 install_requires = ["six >= 1.7.3", ]
-if is_win:
+if is_win and is_cpython:
       install_requires += ['windows-curses']
 
 exec(open("percol/info.py").read())
@@ -69,6 +70,7 @@ setup(name             = "percolator",
       install_requires = install_requires,
       extras_require={
         "cmigemo": ["cmigemo >= 0.1.5"],
-        'all': ['cmigemo >= 0.1.5'],  # convience, all of the above
+        "pinyin": ["pinyin"],  # untested
+        'all': ['cmigemo >= 0.1.5', "pinyin"],  # convience, all of the above
       }
       )
