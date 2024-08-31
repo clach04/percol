@@ -12,6 +12,7 @@ Suggested setup.py parameters:
 
     * build
     * install
+    * develop (instead of install)
     * sdist  --formats=zip
     * sdist  # NOTE requires tar/gzip commands
 
