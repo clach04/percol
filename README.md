@@ -1,5 +1,6 @@
-# percolator / percol
+-*- coding: utf-8 -*-
 
+# percolator / percol
 
 https://github.com/clach04/percolator/ is a fork of percol, using the same
 namespace for easy migration.
