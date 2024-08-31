@@ -8,9 +8,9 @@ Try::
 and you can display the output of command A and filter it interactively and then pass it to command B.
 The interface of percol is highly inspired by anything.el for Emacs.
 
-Full details at https://github.com/mooz/percol"""
+Full details at https://github.com/clach04/percolator"""
 
-__version__ = "0.2.1"
+__version__ = "0.2.2"
 
 __logo__ = """                                    __
         ____  ___  ______________  / /

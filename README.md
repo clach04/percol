@@ -1,4 +1,14 @@
-# percol
+# percolator / percol
+
+
+https://github.com/clach04/percolator/ is a fork of percol, using the same
+namespace for easy migration.
+
+Current main difference is Windows support (as a library).
+Percol has not been updated in a few years, hence the fork.
+Also available from PyPi https://pypi.org/project/percolator/
+
+Original readme below.
 
                                     __
         ____  ___  ______________  / /
