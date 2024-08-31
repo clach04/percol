@@ -35,7 +35,7 @@ setup(name             = "percol",
       license          = "MIT",
       install_requires = install_requires,
       extras_require={
-        "cmigemo": "cmigemo >= 0.1.5"],
+        "cmigemo": ["cmigemo >= 0.1.5"],
         'all': ['cmigemo >= 0.1.5'],  # convience, all of the above
       }
       )
