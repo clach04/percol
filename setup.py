@@ -70,6 +70,6 @@ setup(name             = "percolator",
       extras_require={
         "cmigemo": ["cmigemo >= 0.1.5"],
         "pinyin": ["pinyin"],  # untested
-        'all': ['cmigemo >= 0.1.5'],  # convience, all of the above
+        'all': ['cmigemo >= 0.1.5', "pinyin"],  # convience, all of the above
       }
       )
