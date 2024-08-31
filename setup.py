@@ -25,6 +25,7 @@ setup(name             = "percol",
       install_requires = ["six >= 1.7.3"],
       extras_require={
         "cmigemo": ["cmigemo >= 0.1.5"],
+        "pinyin": ["pinyin"],  # untested
         'all': ['cmigemo >= 0.1.5'],  # convience, all of the above
       }
       )
