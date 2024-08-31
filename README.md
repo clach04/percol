@@ -8,6 +8,11 @@ Current main difference is Windows support (as a library).
 Percol has not been updated in a few years, hence the fork.
 Also available from PyPi https://pypi.org/project/percolator/
 
+I would describe percol / percolator as a Python (fzf)[https://github.com/junegunn/fzf]
+clone BUT percol predates fzf :-)
+
+Can be used a library under Windows and Unix/Linux, and also as a command line tool Unix/Linux ONLY.
+
 Original readme below.
 
                                     __
